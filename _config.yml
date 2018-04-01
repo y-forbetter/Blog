@@ -1,0 +1,25 @@
+title: BLOG-y.forbetter
+author: y-forbetter
+email: y.forbetter@gmail.com
+description: > # this means to ignore newlines until "twitter_username:"
+ Blog for records and learning.
+# social links
+github_username:  y-forbetter
+
+
+show_excerpts: true # set to true to show excerpts on the homepage
+
+minima:
+  date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.html
+
+# Build settings
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -17,8 +17,7 @@ permalink: /Archives/
       {% endif %}
     {% endunless %}
 
-    <li><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    {{'('}}{{ post.date | date:"%b" }}{{')'}} </li>
+    <li><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>{{'('}}{{ post.date | date:"%b" }}{{')'}} </li>
   {% endfor %}
 
 </ul>

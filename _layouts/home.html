@@ -17,8 +17,6 @@ layout: default
       {% increment num -%}
       {%- for post in site.posts -%}
       {% increment num -%}
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {{ post.title | escape }}{{ '(' }}{{ post.date | date: date_format }}{{ ')' }}
         {%- if num <= 6 -%}
           <li>
             <h3>
@@ -29,6 +27,8 @@ layout: default
             {{ post.excerpt }}
             {%- endif -%}
           </li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ post.title | escape }}{{ '(' }}{{ post.date | date: date_format }}{{ ')' }}
         {%- endif -%}
       {%- endfor -%}
     </ul>

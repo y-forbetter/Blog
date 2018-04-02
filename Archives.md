@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Archives(归档)
-permalink: /Archives/
 ---
 
 <ul>

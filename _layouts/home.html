@@ -21,11 +21,11 @@ layout: default
             <h3>
               <a class="post-link" href="{{ post.url | relative_url }}">
               </a>
-              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-              {{ post.title | escape }}{{ '(' }}{{ post.date | date: date_format }}{{ ')' }}
             </h3>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ post.title | escape }}{{ '(' }}{{ post.date | date: date_format }}{{ ')' }}
             {%- if site.show_excerpts -%}
-              {{ post.excerpt }}
+            {{ post.excerpt }}
             {%- endif -%}
           </li>
         {%- endif -%}

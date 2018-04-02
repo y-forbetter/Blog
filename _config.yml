@@ -5,7 +5,6 @@ description: > # this means to ignore newlines until "twitter_username:"
  Blog for records and learning.
 # social links
 github_username:  y-forbetter
-
 show_excerpts: true # set to true to show excerpts on the homepage
 
 minima:

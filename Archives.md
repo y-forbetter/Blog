@@ -17,7 +17,7 @@ permlink: /Archives/
       {% endif %}
     {% endunless %}
 
-    <li><a href="{{ post.url | relative_url }}">{{ post.title}}</a>{{'('}}{{ post.date | date:"%b" }}{{')'}} </li>
+    <li><a href="{{'/Blog/'}}{{ post.url}}">{{ post.title}}</a>{{'('}}{{ post.date | date:"%b" }}{{')'}} </li>
   {% endfor %}
 
 </ul>

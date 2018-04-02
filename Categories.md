@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Categories/Tags(标签)
-permlink: /Categories/
 ---
 
 {% for category in site.categories %}

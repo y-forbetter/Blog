@@ -12,13 +12,13 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Recent posts" }}
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {{ post.title | escape }}{{ '(' }}{{ post.date | date: date_format }}{{ ')' }}
     </h2>
     <ul class="post-list">
       {% increment num -%}
       {%- for post in site.posts -%}
       {% increment num -%}
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {{ post.title | escape }}{{ '(' }}{{ post.date | date: date_format }}{{ ')' }
         {%- if num <= 6 -%}
           <li>
             <h3>

@@ -19,8 +19,9 @@ layout: default
         {%- if num <= 6 -%}
           <li>
             <h3>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
+                {{ post.title | escape }}{{'('}}{{ post.date | date: date_format }}{{')'}}
               </a>
             </h3>
             {%- if site.show_excerpts -%}
@@ -33,5 +34,4 @@ layout: default
       {%- endfor -%}
     </ul>
   {%- endif -%}
-
 </div>

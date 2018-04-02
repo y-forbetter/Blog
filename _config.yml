@@ -1,12 +1,10 @@
-title: BLOG-y.forbetter
+title: BLOG | y.forbetter
 author: y-forbetter
 email: y.forbetter@gmail.com
 description: > # this means to ignore newlines until "twitter_username:"
  Blog for records and learning.
 # social links
 github_username:  y-forbetter
-baseurl: /blog/
-
 
 show_excerpts: true # set to true to show excerpts on the homepage
 

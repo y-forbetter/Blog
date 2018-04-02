@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Categories/Tags(标签)
-permalink: /Categories/
+permlink: /Categories/
 ---
 
 {% for category in site.categories %}
-<h2>{{ category | first }}{{'('}}{{category | last | size}}{{')'}}</h2>
+<h3>{{ category | first }}{{'('}}{{category | last | size}}{{')'}}</h3>
 <ul class="arc-list">
     {% for post in category.last %}
-        <li><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        {{'('}}{{ post.date | date:"%Y/%M/%D"}}{{')'}}</li>
+        <li><a href="{{ post.url}}">{{ post.title}}</a>{{'('}}{{ post.date | date:"%Y/%M/%D"}}{{')'}}</li>
     {% endfor %}
 </ul>
 {% endfor %}
